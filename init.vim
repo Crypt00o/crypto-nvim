@@ -48,7 +48,7 @@ endfunction
 
 function CryptoStack()
 	  echo "[+] Installing CryptoStack"
-	  CocInstall  coc-snippets coc-tsserver  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html coc-tsdetect  coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier 
+	  CocInstall  coc-snippets coc-tsserver  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html coc-tsdetect  coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier coc-restclient 
 endfunction
 
 
@@ -183,10 +183,12 @@ function SetKeyMaps()
 	  vmap <C-v> c<ESC>"+p
 	  imap <C-v> <ESC>"+pa
 "select all
-         inoremap <C-a><ESC> ggVG
-	 nnoremap <C-a> ggVG
-
-
+      inoremap <C-a><ESC> ggVG
+	  nnoremap <C-a> ggVG
+	  
+"rest api by coc-rest
+	  nnoremap <Leader>0 <cmd> CocCommand rest-client.request <cr> 
+	  inoremap <Leader>0<Esc> <cmd> CocCommand rest-client.request <cr>
 	  inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 endfunction
 
