@@ -119,15 +119,15 @@ function CustomDBUI()
 endfunction
 
 function AutoCmd()
-	  set completefunc=emoji#complete
-	  autocmd VimEnter * :exec OpenCocExlporerInSplitWindow() 
+	  autocmd VimEnter * :exec OpenCocExlporerInSplitWindow()
+	  autocmd BufRead,BufNewFile *.smali set filetype=smali "smali for disassmebled apks
 	  autocmd BufRead,BufNewFile *.asm set filetype=nasm  "intel asm syntax
 	  autocmd BufRead,BufNewFile *.s,*.S  set filetype=arm "arm = armv6/7
 endfunction
 
 function SetKeyMaps()
 
-	  nnoremap <Leader>gb :Gblame<CR>  
+	  nnoremap <Leader>gc :Gclog<CR>  
 	  " git blame
 " Find files using Telescope command-line sugar.
 	  nnoremap fff <cmd>Telescope find_files<cr>
