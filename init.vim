@@ -29,7 +29,7 @@ Plug 'https://github.com/preservim/tagbar' " to dispaly classes , functions , va
 Plug 'https://github.com/airblade/vim-gitgutter' " show new git commits
 Plug 'https://github.com/tpope/vim-fugitive' " git  control
 Plug 'https://github.com/tpope/vim-rhubarb'  "show commits in browser
-
+Plug 'https://github.com/wakatime/vim-wakatime' "sync time spended in nvim 
 call plug#end()
 
 
