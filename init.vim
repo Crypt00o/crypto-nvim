@@ -9,7 +9,7 @@ Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-Plug 'https://github.com/neoclide/coc.nvim' , {'branch': 'release' , 'do':':CocInstall coc-explorer coc-git'}   " Auto Completion
+Plug 'https://github.com/neoclide/coc.nvim' , {'branch': 'release','do':':CocInstall coc-explorer coc-git'}   " Auto Completion
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/shaunsingh/moonlight.nvim' " moonlight theme
@@ -48,7 +48,7 @@ endfunction
 
 function CryptoStack()
 	  echo "[+] Installing CryptoStack"
-	  CocInstall  coc-snippets coc-tsserver  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html   coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier coc-restclient 
+	  CocInstall  coc-snippets coc-tsserver coc-explorer  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html   coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier coc-restclient 
 endfunction
 
 
