@@ -48,7 +48,7 @@ endfunction
 
 function CryptoStack()
 	  echo "[+] Installing CryptoStack"
-	  CocInstall  coc-snippets coc-tsserver  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html coc-tsdetect  coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier coc-restclient 
+	  CocInstall  coc-snippets coc-tsserver  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html   coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier coc-restclient 
 endfunction
 
 
