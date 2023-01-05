@@ -48,7 +48,7 @@ endfunction
 
 function CryptoStack()
 	  echo "[+] Installing CryptoStack"
-	  CocInstall  coc-snippets coc-tsserver coc-explorer  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html   coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier coc-restclient 
+	  CocInstall  coc-snippets coc-tsserver coc-explorer  coc-rust-analyzer coc-python coc-clangd coc-sh @yaegassy/coc-tailwindcss3 coc-css  coc-react-refactor coc-html   coc-webview coc-markdown-preview-enhanced coc-eslint coc-prettier coc-restclient coc-docker 
 endfunction
 
 
@@ -106,12 +106,9 @@ endfunction
 
 function NewTab()
 	tab new
-    CocCommand explorer . --toggle
+    CocCommand explorer  --toggle
 endfunction
 
-function OpenCocExlporerInSplitWindow()
-	  CocCommand explorer . --toggle
-endfunction
 
 function CustomDBUI()
 	CocCommand explorer exit
@@ -119,7 +116,7 @@ function CustomDBUI()
 endfunction
 
 function AutoCmd()
-	  autocmd VimEnter * :exec OpenCocExlporerInSplitWindow()
+	  autocmd VimEnter * :CocCommand explorer  --toggle
 	  autocmd BufRead,BufNewFile *.smali set filetype=smali "smali for disassmebled apks
 	  autocmd BufRead,BufNewFile *.asm set filetype=nasm  "intel asm syntax
 	  autocmd BufRead,BufNewFile *.s,*.S  set filetype=arm "arm = armv6/7

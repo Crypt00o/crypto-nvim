@@ -14,4 +14,4 @@
 
 ##### Optional 
 
-you can use `:exec CryptoStack()` to install languages servers : ts, js, html, css, tailwindcss3, rust, c, shell, python, prettier, eslint, REST-API-Client, markdown-preiviewer, react-refactor 
+you can use `:exec CryptoStack()` to install languages servers : ts, js, html, css, tailwindcss3, rust, c, 0x86 assembly, 0x86_64 assembly,  arm assembly, smlai, shell, python, prettier, eslint, REST-API-Client, docker, markdown-preiviewer, react-refactor 
