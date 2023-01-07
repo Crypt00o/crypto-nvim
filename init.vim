@@ -20,6 +20,7 @@ Plug 'https://github.com/nvim-telescope/telescope.nvim' " for searching inside f
 Plug 'https://github.com/junegunn/fzf.vim' " for searching and quick fuzzy search 
 Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'https://github.com/catppuccin/nvim', { 'as': 'catppuccin' } "beautiful theme
+Plug 'https://github.com/folke/tokyonight.nvim', { 'branch': 'main' } "tokyonight theme
 Plug 'https://github.com/tpope/vim-dadbod' " for all kinds of databases Management 
 Plug 'https://github.com/kristijanhusak/vim-dadbod-ui' " database Management throw ui 
 Plug 'https://github.com/tpope/vim-dotenv' "plug for .env file variables
@@ -43,7 +44,7 @@ function SetOptions()
 	  set softtabstop=4
 	  set mouse=a
 	  set encoding=UTF-8
-	  colorscheme catppuccin
+	  colorscheme catppuccin-mocha
 endfunction
 
 function CryptoStack()
